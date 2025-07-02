@@ -1,19 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cocina y Alimentación</title>
-    <link rel="stylesheet" href="style_vista_principal.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style_vista_principal.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="barra_navegacion">
-            <ul class="opciones">
-                <li>Home</li>
-                <li>Recetas mas populares</li>
-            </ul>
-        </nav>
+      <nav class="barra_navegacion">
+        <div class="logo">
+          <img src="imagenes/taza_cafe.png" alt="taza de cafe" />
+          Delicias en la mesa
+        </div>
+        <ul class="opciones">
+          <a href="vista_principal.html"><li>Home</li></a>
+          <a href=""><li>Recetas mas populares</li></a>
+          <a href=""><li>Recetas saludables</li></a>
+        </ul>
+      </nav>
     </header>
-</body>
+
+    <main>
+      <div class="contenedor">
+        <div class="sombra"></div>
+        <section class="imagen">
+          <img src="imagenes/comida_sobre_mesa.jpg" alt="comida en la mesa" />
+        </section>
+        <section class="texto">
+          <p>
+            Inspírate, cocina con pasión y saborea <br />
+            momentos inolvidables en la mesa
+          </p>
+        </section>
+      </div>
+
+      <div class="subtitulo">
+        <h2>DELICIAS DESTACADAS</h2>
+      </div>
+
+      <div class="contenedor_platos">
+        <div class="plato">
+          <img src="imagenes/waffle.jpg" alt="Waffle" />
+          <div class="texto_platos">
+            <h3>Waffles</h3>
+            <p>
+              Los wafles son una masa crujiente 
+              con forma cuadriculada, cocinada en una waflera.
+              Se sirven comúnmente con miel, frutas o crema.
+            </p>
+          </div>
+        </div>
+
+        <div class="plato">
+          <img src="imagenes/pancakes.jpg" alt="Pancakes" />
+          <div class="texto_platos">
+            <h3>Pancakes</h3>
+            <p>
+              Los pancakes son panecillos planos y esponjosos, 
+              cocinados a la plancha. 
+              Se suelen servir con miel, frutas o mantequilla.
+            </p>
+          </div>
+        </div>
+
+        <div class="plato">
+          <img src="imagenes/chocolate_caliente.jpg" alt="Chocolate caliente" />
+          <div class="texto_platos">
+            <h3>Chocolate caliente</h3>
+            <p>
+              El chocolate caliente es una bebida dulce 
+              hecha con leche y chocolate derretido o en polvo, 
+              ideal para climas fríos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <div class="contenedor_footer">
+            <div class="logo">
+                <img src="imagenes/taza_cafe.png" alt="taza de cafe"/>
+                Delicias en la mesa
+              </div>
+
+              <div class="redes_sociales">
+                <p>Redes sociales</p>
+                <div class="icono">
+                    <img src="imagenes/instagram.png" alt="Logo instagram">
+                    <img src="imagenes/whatsapp.png" alt="Logo whatsapp">
+                    <img src="imagenes/facebook.png" alt="Logo facebook">
+                </div>
+              </div>
+        </div>
+    </footer>
+  </body>
 </html>
