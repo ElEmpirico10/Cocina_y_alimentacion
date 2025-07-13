@@ -5,8 +5,10 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 70px;
+    min-height: 100vh;
 }
 .barra_navegacion{
     position: fixed;
@@ -62,87 +64,39 @@ body{
     font-weight: bold;
 }
 
-.contenedor{
-    position: relative;
-    overflow: hidden;
-    z-index: 2;
+.principal{
+    flex: 1;
 }
 
-.imagen{
-    height: 400px;
-}
-
-.imagen img{
-    width: 100%;
-    height: auto;
-}
-
-.contenedor .texto{
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 36%;
-    transform: translateX(-50%, -50%);
+.ingredientes{
     display: flex;
     justify-content: center;
-    z-index: 3;
-    color: white;
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    text-shadow: 3px 3px 4px black;
-}
-
-.sombra{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 700px;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1;
-}
-
-.subtitulo{
-    text-align: center;
-    margin: 30px auto;
-}
-
-.contenedor_platos{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 60px;
-}
-
-.plato{
-    width: 240px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: 0.5s ease;
-}
-
-.plato img{
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-}
-
-.plato .texto_platos{
+    flex-direction: column;
+    background-color: #f8f8f8;
+    font-family: 'popins', sans-serif;
     padding: 16px;
-    
+    color: #333;
+    text-align: center;
+    flex: 1;
+    margin-top: 100px;
 }
 
-.plato h3{
-    margin-bottom: 8px;
-    font-size: 18px;
+.ingredientes p{
+    margin-top: -150px;
+    padding-bottom: 260px;
 }
 
-.plato:hover{
-    scale: 1.03;
-    box-shadow: 0 0 10px rgba(237, 255, 77, 0.4);
+.ingredientes h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.ingredientes ul{
+    padding: 30px;
+    list-style: none;
+   
 }
 
 .contenedor_footer{
@@ -152,7 +106,6 @@ body{
     background-color: rgb(236, 236, 165);
     width: 100%;
     height: 120px;
-    margin-top: 100px;
     padding: 0 70px;
 }
 
@@ -187,4 +140,4 @@ body{
     scale: 1.04;
     background-color: white;
     cursor: pointer;
-} 
+}
